@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#b6b6b6"
+    tools:context="writeit.aclass.Chat">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rvMessages"
+        android:layout_above="@+id/formChat"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></android.support.v7.widget.RecyclerView>
+
+    <LinearLayout
+        android:id="@+id/formChat"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/btnAdd"
+            android:layout_width="5dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#ddd"
+            android:padding="10dp"
+            android:src="@drawable/add" />
+
+        <EditText
+            android:id="@+id/etInput"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/etawal"
+            android:padding="10dp"
+            android:focusable="true"
+            android:textColor="#000"
+            android:textColorHint="#e5b9b9b9" />
+
+        <ImageView
+            android:id="@+id/btnSend"
+            android:layout_width="5dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#ddd"
+            android:padding="10dp"
+            android:src="@drawable/send" />
+    </LinearLayout>
+
+</RelativeLayout>

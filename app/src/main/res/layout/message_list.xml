@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_margin="10dp"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_marginRight="7dp"
+        android:id="@+id/imgProfil"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/userdef"/>
+    
+
+
+    <me.himanshusoni.chatmessageview.ChatMessageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/chatBG"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvUsername"
+        android:layout_toRightOf="@id/imgProfil"
+
+        app:cmv_arrowGravity="start"
+        app:cmv_arrowPosition="left"
+        app:cmv_arrowMargin="3dp"
+        app:cmv_contentPadding="10dp"
+        app:cmv_backgroundColor="#FFF"
+        app:cmv_backgroundColorPressed="#f2f2f2"
+        app:cmv_cornerRadius="3dp"
+        app:cmv_showArrow="true">
+
+        <TextView
+            android:id="@+id/tvMessages"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hello" />
+
+        <!-- ... -->
+
+    </me.himanshusoni.chatmessageview.ChatMessageView>
+
+    <!--<TextView-->
+        <!--android:padding="10dp"-->
+        <!--android:layout_marginTop="5dp"-->
+        <!--android:id="@+id/tvMessages"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_below="@id/tvUsername"-->
+        <!--android:layout_toRightOf="@id/imgProfil"-->
+        <!--android:background="@drawable/bg_message"/>-->
+
+
+</RelativeLayout>

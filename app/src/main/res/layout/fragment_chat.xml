@@ -1,0 +1,24 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="writeit.aclass.Fragment.ChatFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <Button
+        android:id="@+id/btnLogout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Logout"/>
+    <Button
+        android:id="@+id/btnEditAkun"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Profil Saya"/>
+    <Button
+        android:id="@+id/btnFindUser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Find User"/>
+</LinearLayout>
